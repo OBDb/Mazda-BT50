@@ -1,3 +1,6 @@
+references:
+  - "https://en.wikipedia.org/wiki/Mazda_BT-50"
+
 generations:
   - name: "First Generation"
     start_year: 2006
