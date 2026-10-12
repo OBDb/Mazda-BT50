@@ -1,4 +1,79 @@
 { "commands": [
-
+{ "hdr": "600", "rax": "680", "fcm1": true, "dbg": true, "cmd": {"22": "0C09"}, "freq": 0.25,
+  "signals": [
+    {"id": "BT50_FL_WHL_SPD", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
+  ]},
+{ "hdr": "600", "rax": "680", "fcm1": true, "dbg": true, "cmd": {"22": "0C0A"}, "freq": 0.25,
+  "signals": [
+    {"id": "BT50_FR_WHL_SPD", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+  ]},
+{ "hdr": "600", "rax": "680", "fcm1": true, "dbg": true, "cmd": {"22": "0C0B"}, "freq": 0.25,
+  "signals": [
+    {"id": "BT50_RL_WHL_SPD", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
+{ "hdr": "600", "rax": "680", "fcm1": true, "dbg": true, "cmd": {"22": "0C0C"}, "freq": 0.25,
+  "signals": [
+    {"id": "BT50_RR_WHL_SPD", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "620", "rax": "6A0", "fcm1": true, "dbg": true, "cmd": {"22": "1086"}, "freq": 1,
+  "signals": [
+    {"id": "BT50_BOOST_P", "path": "Engine", "fmt": { "len": 16, "max": 2047, "div": 32, "unit": "kilopascal" }, "name": "Boost pressure"}
+  ]},
+{ "hdr": "620", "rax": "6A0", "fcm1": true, "dbg": true, "cmd": {"22": "1102"}, "freq": 1,
+  "signals": [
+    {"id": "BT50_MAIN_FUEL_INJ_QTY", "path": "Fuel", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "unknown" }, "name": "Main fuel injection quantity"}
+  ]},
+{ "hdr": "620", "rax": "6A0", "fcm1": true, "dbg": true, "cmd": {"22": "1144"}, "freq": 1,
+  "signals": [
+    {"id": "BT50_CYL_1_FUEL", "path": "Fuel", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "unknown" }, "name": "Cylinder 1 fuel compensation"}
+  ]},
+{ "hdr": "620", "rax": "6A0", "fcm1": true, "dbg": true, "cmd": {"22": "1145"}, "freq": 1,
+  "signals": [
+    {"id": "BT50_CYL_2_FUEL", "path": "Fuel", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "unknown" }, "name": "Cylinder 2 fuel compensation"}
+  ]},
+{ "hdr": "620", "rax": "6A0", "fcm1": true, "dbg": true, "cmd": {"22": "1146"}, "freq": 1,
+  "signals": [
+    {"id": "BT50_CYL_3_FUEL", "path": "Fuel", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "unknown" }, "name": "Cylinder 3 fuel compensation"}
+  ]},
+{ "hdr": "620", "rax": "6A0", "fcm1": true, "dbg": true, "cmd": {"22": "1147"}, "freq": 1,
+  "signals": [
+    {"id": "BT50_CYL_4_FUEL", "path": "Fuel", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "unknown" }, "name": "Cylinder 4 fuel compensation"}
+  ]},
+{ "hdr": "620", "rax": "6A0", "fcm1": true, "dbg": true, "cmd": {"22": "1211"}, "freq": 5,
+  "signals": [
+    {"id": "BT50_FUEL_T", "path": "Fuel", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature"}
+  ]},
+{ "hdr": "620", "rax": "6A0", "fcm1": true, "dbg": true, "cmd": {"22": "1217"}, "freq": 5,
+  "signals": [
+    {"id": "BT50_TURBOCHARGER_OUTLET_T", "path": "Engine", "fmt": { "len": 16, "max": 65495, "min": -40, "add": -40, "unit": "celsius" }, "name": "Turbocharger outlet temperature"}
+  ]},
+{ "hdr": "621", "rax": "6A1", "fcm1": true, "dbg": true, "cmd": {"22": "200A"}, "freq": 5,
+  "signals": [
+    {"id": "BT50_ATF_T_1", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature 1"}
+  ]},
+{ "hdr": "621", "rax": "6A1", "fcm1": true, "dbg": true, "cmd": {"22": "2014"}, "freq": 0.25,
+  "signals": [
+    {"id": "BT50_GEAR_RAT", "path": "Transmission", "fmt": { "len": 8, "max": 7.93, "mul": 311, "div": 10000, "unit": "scalar" }, "name": "Gear ratio"}
+  ]},
+{ "hdr": "621", "rax": "6A1", "fcm1": true, "dbg": true, "cmd": {"22": "2016"}, "freq": 0.25,
+  "signals": [
+    {"id": "BT50_ACT_GEAR", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Actual gear code"}
+  ]},
+{ "hdr": "621", "rax": "6A1", "fcm1": true, "dbg": true, "cmd": {"22": "2017"}, "freq": 0.25,
+  "signals": [
+    {"id": "BT50_CMD_GEAR", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Commanded gear"}
+  ]},
+{ "hdr": "621", "rax": "6A1", "fcm1": true, "dbg": true, "cmd": {"22": "2018"}, "freq": 0.25,
+  "signals": [
+    {"id": "BT50_ACT_ENG_TQ", "path": "Engine", "fmt": { "len": 16, "max": 31919, "min": -848, "div": 2, "add": -848, "unit": "newtonMeters" }, "name": "Actual engine torque"}
+  ]},
+{ "hdr": "621", "rax": "6A1", "fcm1": true, "dbg": true, "cmd": {"22": "2022"}, "freq": 5,
+  "signals": [
+    {"id": "BT50_ATF_T_2", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature 2"}
+  ]},
+{ "hdr": "621", "rax": "6A1", "fcm1": true, "dbg": true, "cmd": {"22": "203A"}, "freq": 0.25,
+  "signals": [
+    {"id": "BT50_TQ_CONV_SLIP", "path": "Transmission", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "rpm" }, "name": "Torque converter slip"}
+  ]}
 ]
 }
